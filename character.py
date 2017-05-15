@@ -1,3 +1,5 @@
+# A file that defines all the character classes, including fighters and NPCs
+
 class character:
     def __init__(self, name, position, growthRate):
         self.name = name

@@ -1,11 +1,17 @@
 #! /usr/bin/env python3
 
+# The executable class
+# To run, use 'python3 dungeon.py'
+
 import collections
 import copy
 import random
 import sys
 import termios
 import tty
+
+from text import CLEAR
+import text
 
 #
 #   TODO:
@@ -336,7 +342,7 @@ if __name__ == '__main__':
         wait = False
 
         # Clear the terminal
-        sys.stdout.write("\x1b[2J\x1b[H")
+        sys.stdout.write(CLEAR)
 
         if curhp <= 0:
             sys.stdout.write('You died. gg\n')
