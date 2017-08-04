@@ -10,6 +10,7 @@ import sys
 import termios
 import tty
 
+import character
 from text import CLEAR
 import text
 
@@ -325,6 +326,9 @@ def read_key():
 
 if __name__ == '__main__':
     # Initialize the first level
+
+    mc = character.Hero("Max", 0, 0, 0, 0)
+
     levels = []
     monsters = []
 
